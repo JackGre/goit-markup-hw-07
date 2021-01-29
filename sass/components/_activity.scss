@@ -1,0 +1,92 @@
+/* Наименование примеров направлений работ */
+.activity {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-types .works-link:hover,
+  &-types .works-link:focus {
+    box-shadow: $box-shadow-works-link;
+  }
+
+  &-types:not(:nth-child(3n)) {
+    margin-right: auto;
+  }
+  &-types:nth-child(-n + 6) {
+    margin-bottom: 30px;
+  }
+  &-types {
+    width: 370px;
+    border: 1px solid $border-directions-work-color;
+  }
+
+  .works-link {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .block-work {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .img-directions {
+    display: block;
+    width: 100%;
+  }
+
+  .example {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $main-text-color;
+
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-bottom: 4px;
+  }
+
+  .directions {
+    font-size: 16px;
+    line-height: 1.875;
+    color: $secondary-text-color;
+
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .produkt {
+    position: relative;
+    overflow: hidden;
+  }
+  .text-action {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 322px;
+    height: 168px;
+
+    font-size: 18px;
+    line-height: 1.56;
+    color: #ffffff;
+  }
+
+  .produkt-actions {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    transform: translateY(101%);
+
+    transition: 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: $bg-directions-work-color;
+  }
+
+  .works-link:hover .produkt-actions,
+  .works-link:focus .produkt-actions {
+    transform: translatey(0);
+  }
+}
