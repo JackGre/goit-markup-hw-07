@@ -1,0 +1,11 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-footer-hero;
+
+  &-list {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
