@@ -1,13 +1,15 @@
 @import "utils/variables";
 @import "base/defaults";
-@import "components/filter";
-@import "components/activity";
-@import "components/backdrop";
+@import "components/footer-form";
+@import "components/portfolio-filter";
+@import "components/portfolio-activity";
+@import "components/modal-backdrop";
 @import "components/modal";
-@import "components/form";
-@import "components/comment";
-@import "components/agreement";
-@import "components/button-form";
+@import "components/modal-form";
+@import "components/modal-block";
+@import "components/modal-comment";
+@import "components/modal-agreement";
+@import "components/modal-button-form";
 
 /* Header */
 
@@ -554,74 +556,4 @@
 .item-soc {
   width: 44px;
   height: 44px;
-}
-/*Форма*/
-
-.form {
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  align-items: flex-end;
-}
-
-.form input {
-  width: 358px;
-  height: 50px;
-  margin-top: 20px;
-  margin-right: 12px;
-  padding-left: 16px;
-  border: 1px solid $footer-text-color;
-  border-radius: 4px;
-  background: $background-footer-hero;
-}
-
-.form input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  color: $footer-text-color;
-}
-
-.text-mail {
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1.14;
-  color: $white-text-color;
-}
-
-.button-mail {
-  width: 200px;
-  height: 50px;
-  padding-right: 62px;
-  padding-left: 26px;
-
-  background: $accent-text-color;
-  box-shadow: $button-shadow-mail;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: $white-text-color;
-}
-
-.form .mail-block-button {
-  position: relative;
-}
-
-.icon-send {
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 50%;
-  right: 28px;
-  transform: translateY(-50%);
-}
-
-.footer-input {
-  font-size: 16px;
-  line-height: 1.25;
-  color: $footer-text-color;
 }

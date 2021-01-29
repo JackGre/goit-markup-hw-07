@@ -1,0 +1,9 @@
+.modal-form {
+  &__text {
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    color: $main-text-color;
+  }
+}
