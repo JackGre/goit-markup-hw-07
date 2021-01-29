@@ -38,10 +38,9 @@
     display: inline-block;
     content: " ";
     position: absolute;
+    top: 50%;
     left: 0;
-    //top: 50%;
-    //transform: translateY(-50%);
-    @extend %transform;
+    transform: translateY(-50%);
     width: 16px;
     height: 15px;
     border: 2px solid $main-text-color;

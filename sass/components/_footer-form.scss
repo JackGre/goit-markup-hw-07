@@ -55,10 +55,9 @@
     width: 24px;
     height: 24px;
     position: absolute;
+    top: 50%;
     right: 28px;
-    //top: 50%;
-    //transform: translateY(-50%);
-    @extend %transform;
+    transform: translateY(-50%);
   }
 
   .footer-input {
