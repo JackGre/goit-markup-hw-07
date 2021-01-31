@@ -46,3 +46,30 @@ p {
   margin-right: auto;
   padding-top: 200px;
 }
+
+.section-work,
+.section-command,
+.section-client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-work__text,
+.section-command__text,
+.section-client__text {
+  margin-bottom: 50px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  color: $main-text-color;
+}
+
+.visually-heeden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

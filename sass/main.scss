@@ -1,5 +1,7 @@
 @import "utils/variables";
 @import "base/defaults";
+@import "components/section-advantages";
+@import "components/section-work";
 @import "components/section-command";
 @import "components/command-social";
 @import "components/section-client";
@@ -198,28 +200,22 @@
 
 /* Преимущества(advantages) */
 
-.advantages {
+/*.section-advantages {
   padding-top: 94px;
 
   display: flex;
 }
-.list-advantages > .item-list:not(:last-child) {
+.section-advantages__list > .section-advantages__link:not(:last-child) {
   margin-right: 30px;
 }
 
-.visually-heeden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
 
-.item-list {
+
+.section-advantages__link {
   width: 270px;
 }
 
-.bg-svg {
+.section-advantages__bg {
   display: flex;
   height: 120px;
   justify-content: center;
@@ -229,32 +225,32 @@
   background-color: $bg-command-color;
 }
 
-.icon-advantages {
+.section-advantages__icon {
   width: 70px;
   height: 70px;
 }
 
-.title {
+.section-advantages__name {
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
   color: $main-text-color;
 }
 
-.description {
+.section-advantages__description {
   line-height: 1.71;
   color: $secondary-text-color;
 }
 
 /* Чем мы занимаемся(work) */
-.work,
+/*.section-work,
 .section-command,
 .section-client {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.work-title,
+.section-work__text,
 .section-command__text,
 .section-client__text {
   margin-bottom: 50px;
@@ -264,26 +260,26 @@
   font-size: 36px;
   line-height: 1.67;
   color: $main-text-color;
-}
+}*/
 
-.work-img {
+/*.section-work__list {
   display: flex;
 }
-.img-item {
+.section-work__img {
   display: block;
   width: 100%;
 }
 
-.work-img > .lable:not(:last-child) {
+.section-work__list > .section-work__lable:not(:last-child) {
   margin-right: 30px;
 }
 
-.lable {
+.section-work__lable {
   position: relative;
   width: 370px;
 }
 
-.lable-text {
+.section-work__name {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -295,7 +291,7 @@
   font-weight: bold;
   white-space: nowrap;
 }
-.fon {
+.section-work__fon {
   content: "";
   position: absolute;
   width: 100%;
