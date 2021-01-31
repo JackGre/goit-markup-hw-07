@@ -1,5 +1,6 @@
 @import "utils/variables";
 @import "base/defaults";
+@import "components/section-client";
 @import "components/footer";
 @import "components/footer-social";
 @import "components/footer-link";
@@ -395,12 +396,12 @@
 }
 /*Постоянные клиенты*/
 
-.list-client {
+/*.section-client__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.client-link {
+.section-client__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -412,52 +413,52 @@
   fill: $fill-icon;
   /*transition-property: color, border, fill;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-client > .item-client:not(:last-child) {
+.section-client__list > .section-client__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.item-client {
+.section-client__item {
   width: 170px;
   height: 90px;
 }
-.yaco-icon {
+.section-client__yaco {
   width: 44px;
   height: 49px;
 }
 
-.tagline-icon {
+.section-client__tagline {
   width: 40px;
   height: 52px;
 }
-.company-icon {
+.section-client__company {
   width: 41px;
   height: 43px;
 }
-.foster-icon {
+.section-client__foster {
   width: 80px;
   height: 42px;
 }
-.brand-icon {
+.section-client__brand {
   width: 59px;
   height: 47px;
 }
 
-.tag-icon {
+.section-client__tag {
   width: 88px;
   height: 45px;
 }
 
-.client-link:hover,
-.client-link:focus {
+.section-client__link:hover,
+.section-client__link:focus {
   border: 1px solid $accent-text-color;
   color: $accent-text-color;
-}
+}*/
 /* Footer */
 
 /*.footer {
@@ -528,7 +529,7 @@
   border-radius: 50%;
   color: $white-text-color;
   fill: $fill-icon;
-  /*transition-property: background-color;
+  transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
