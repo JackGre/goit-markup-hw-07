@@ -47,6 +47,105 @@ p {
   padding-top: 200px;
 }
 
+.section-command {
+  background-color: #f5f4fa;
+}
+
+.section-command__block {
+  width: 270px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.section-command__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-command__title > .section-command__block:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-command__img {
+  display: block;
+  width: 100%;
+}
+
+.section-command__employee {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section-command__name {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #212121;
+}
+
+.section-command__specialty {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #757575;
+}
+
+.command-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.command-social > .command-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.command-social__item {
+  width: 44px;
+  height: 44px;
+}
+
+.command-social__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  fill: #afb1b8;
+  color: currentColor;
+  /*transition-property: fill, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.command-social__link:hover, .command-social__link:focus {
+  fill: #ffffff;
+  background-color: #2196f3;
+}
+
+.command-social__icon {
+  width: 20px;
+  height: 20px;
+}
+
 .section-client__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1058,14 +1157,14 @@ p {
 
 /* Чем мы занимаемся(work) */
 .work,
-.command,
+.section-command,
 .section-client {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .work-title,
-.text-title,
+.section-command__text,
 .section-client__text {
   margin-bottom: 50px;
   text-align: center;
@@ -1118,106 +1217,94 @@ p {
 }
 
 /* Наша команда(command) */
-.command {
-  background-color: #f5f4fa;
+/*.section-command {
+  background-color: $bg-command-color;
 }
 
-.bloc-command {
+.section-command__block {
   width: 270px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: $white-text-color;
+  box-shadow: $box-shadow-bloc-command;
 }
 
-.command-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.section-command__title {
   display: flex;
 }
 
-.command-title > .bloc-command:not(:last-child) {
+.section-command__title > .section-command__block:not(:last-child) {
   margin-right: 30px;
 }
 
-.img-command {
+.section-command__img {
   display: block;
   width: 100%;
 }
 
-.bclock-employee {
+.section-command__employee {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.employee {
+.section-command__name {
   margin-bottom: 10px;
   text-align: center;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  color: #212121;
+  color: $main-text-color;
 }
 
-.specialty {
+.section-command__specialty {
   text-align: center;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  color: #757575;
-}
-
-.command-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  color: $secondary-text-color;
+}*/
+/*.command-social {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
-.command-social > .item-command:not(:last-child) {
+.command-social > .command-social__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.item-command {
+.command-social__item {
   width: 44px;
   height: 44px;
 }
 
-.social-link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
+.command-social__link {
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
+
   border-radius: 50%;
-  fill: #afb1b8;
-  color: currentColor;
+  fill: $social-command-color;
+  color: $fill-icon;
   /*transition-property: fill, background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover,
-.social-link:focus {
-  fill: #ffffff;
-  background-color: #2196f3;
+.command-social__link:hover,
+.command-social__link:focus {
+  fill: $white-text-color;
+  background-color: $accent-text-color;
 }
 
-.command-icon {
+.command-social__icon {
   width: 20px;
   height: 20px;
-}
-
+}*/
 /*Постоянные клиенты*/
 /*.section-client__list {
   display: flex;

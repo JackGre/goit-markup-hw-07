@@ -1,5 +1,7 @@
 @import "utils/variables";
 @import "base/defaults";
+@import "components/section-command";
+@import "components/command-social";
 @import "components/section-client";
 @import "components/footer";
 @import "components/footer-social";
@@ -246,14 +248,14 @@
 
 /* Чем мы занимаемся(work) */
 .work,
-.command,
+.section-command,
 .section-client {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .work-title,
-.text-title,
+.section-command__text,
 .section-client__text {
   margin-bottom: 50px;
   text-align: center;
@@ -305,35 +307,35 @@
 }
 
 /* Наша команда(command) */
-.command {
+/*.section-command {
   background-color: $bg-command-color;
 }
 
-.bloc-command {
+.section-command__block {
   width: 270px;
   background-color: $white-text-color;
   box-shadow: $box-shadow-bloc-command;
 }
 
-.command-title {
+.section-command__title {
   display: flex;
 }
 
-.command-title > .bloc-command:not(:last-child) {
+.section-command__title > .section-command__block:not(:last-child) {
   margin-right: 30px;
 }
 
-.img-command {
+.section-command__img {
   display: block;
   width: 100%;
 }
 
-.bclock-employee {
+.section-command__employee {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.employee {
+.section-command__name {
   margin-bottom: 10px;
   text-align: center;
 
@@ -343,31 +345,31 @@
   color: $main-text-color;
 }
 
-.specialty {
+.section-command__specialty {
   text-align: center;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   color: $secondary-text-color;
-}
+}*/
 
-.command-social {
+/*.command-social {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.command-social > .item-command:not(:last-child) {
+.command-social > .command-social__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.item-command {
+.command-social__item {
   width: 44px;
   height: 44px;
 }
 
-.social-link {
+.command-social__link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -379,21 +381,21 @@
   color: $fill-icon;
   /*transition-property: fill, background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover,
-.social-link:focus {
+.command-social__link:hover,
+.command-social__link:focus {
   fill: $white-text-color;
   background-color: $accent-text-color;
 }
 
-.command-icon {
+.command-social__icon {
   width: 20px;
   height: 20px;
-}
+}*/
 /*Постоянные клиенты*/
 
 /*.section-client__list {
