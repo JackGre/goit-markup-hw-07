@@ -17,4 +17,7 @@
 
     margin-bottom: 20px;
   }
+  &-social__list > &-social__item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
