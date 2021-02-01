@@ -73,6 +73,51 @@ p {
   margin: -1px;
 }
 
+.hero {
+  padding: 0;
+  background-color: #c4c4c4;
+}
+
+.hero .overlay {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+}
+
+.hero-block {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-theme {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.hero-button {
+  border-radius: 4px;
+  display: block;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
+  background-color: #2196f3;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
 .section-advantages {
   padding-top: 94px;
   display: -webkit-box;
@@ -1169,30 +1214,31 @@ p {
 }
 
 /* Hero */
-.hero.section {
+/*.hero.section {
   padding: 0;
-  background-color: #c4c4c4;
+  background-color: $hero-bg-color;
 }
 
 .hero .overlay {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+  background-image: linear-gradient(to right, $gradient-color, $gradient-color),
+    url("../images/hero.jpg");
 }
 
-.block-hero {
+.hero-block {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.main-theme {
+.hero-theme {
   text-align: center;
   margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: $white-text-color;
 }
 
 .hero-button {
@@ -1206,12 +1252,13 @@ p {
   padding-bottom: 10px;
   padding-right: 32px;
   padding-left: 32px;
-  background-color: #2196f3;
+  background-color: $accent-text-color;
+
   font-family: inherit;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: $white-text-color;
 }
 
 /* Преимущества(advantages) */
