@@ -17,7 +17,7 @@
 
     margin-bottom: 20px;
   }
-  .footer-social > &-social__item:not(:last-child) {
+  &-social > &-social__item:not(:last-child) {
     margin-right: 10px;
   }
 }

@@ -7,6 +7,9 @@
     line-height: 1.19;
     color: $white-text-color;
   }
+  &__web {
+    color: $accent-text-color;
+  }
 
   &__address {
     font-style: normal;
@@ -22,7 +25,7 @@
     /*transition-property: color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color $animation;
   }
   &__mail {
     margin-bottom: 9px;
