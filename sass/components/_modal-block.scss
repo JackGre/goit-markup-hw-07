@@ -21,7 +21,7 @@
     color: $secondary-text-color;
   }
 
-  & .form-block__input:focus {
+  & &__input:focus {
     border: 1px solid $accent-text-color;
   }
 
