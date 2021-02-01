@@ -20,7 +20,8 @@
   }
 
   &-works__link {
-    transition: box-shadow $animation;
+    //transition: box-shadow $animation;
+    @include transit(box-shadow);
   }
   &-block__work {
     padding-top: 20px;

@@ -11,8 +11,9 @@
   background-color: rgba(0, 0, 0, 0.2);
   /*
       transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
-  transition: transform $animation;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $animation;*/
+  @include transit(transform);
 
   &.is-hidden {
     opacity: 0;

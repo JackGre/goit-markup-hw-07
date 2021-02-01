@@ -12,7 +12,8 @@
     border-radius: 50%;
     color: $white-text-color;
     fill: $fill-icon;
-    transition: background-color $animation;
+    //transition: background-color $animation;
+    @include transit(background-color);
   }
 
   &__link:hover,

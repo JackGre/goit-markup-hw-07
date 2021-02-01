@@ -37,10 +37,13 @@
     color: $main-text-color;
     /*transition-property: fill, background-color, box-shadow;
         transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     transition: color $animation, background-color $animation,
-      box-shadow $animation;
+      box-shadow $animation;*/
+    @include transit(color);
+    @include transit(background-color);
+    @include transit(box-shadow);
   }
 
   &-work &-button:hover,
